@@ -2,3 +2,26 @@
     padding: 
     margin: 
 }
+/* backg background image */
+.bgimage {
+    height:100vh;
+    background: url('images/background.jpg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above backg image*/
+.backg_title {
+    font-size: 4rem;
+}
+.backg_desc {
+    font-size: 2.5rem;
+}
+.backg-text {
+    text-align:justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+
