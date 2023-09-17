@@ -1,135 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priyanka Wandhare's Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="script" href="script.js">
-
+  <title>Portfolio Website-Priyanka</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  
 </head>
-<body>
 
-    <div id="header">
+<body>
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
-            <nav>
-                <h2 class="name">Priyanka's Portfolio</h2>
-                <ul id="sidemenu">
-                    <li><a href=#header>Home</a></li>
-                    <li><a href=#about>About</a></li>   
-                    <li><a href=#skills>Skills</a></li>
-                    <li><a href=#workandProject>Work/Projects</a></li>
-                    <li><a href=#header>Experience</a></li>
-                    <li><a href=#contact>Contact me</a></li>
-                    <i class="uil uil-multiply" onClick="closeMenu()"></i>
+            <a class="navbar-brand" href="#">Priyanka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
-                    <i class="uil uil-apps" onClick="openMenu()"></i>
-            </nav>      
-                    <div class="header-text">
-                        <h1>Hi...! <br> I am <span>Priyanka</span> Wandhare</h1>
-                        <p>Full Stack Web Developer</p>
-                    </div>
-                       
-                    <div class="social-icons">
-                        <a href="https://github.com/priyanka10Wandhare"><i class="uil uil-github"></i></a>
-                        <a href="https://www.linkedin.com/in/priyanka-wandhare-685481223"><i class="uil uil-linkedin"></i></a>
-                        <a href="https://twitter.com/PriyankaWa53464"><i class="uil uil-twitter"></i></a>
-                    </div>
-                </div>
-             </div>
-                   <div id="about">
-        <div class="container">
+            </div>
+        </div>
+    </nav>
+                  <!-- main banner--> 
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
             <div class="row">
-                <div class="about-col-1">
-                    <img src="" alt="">
-                    <a href="<div id="about">
-                        <div class="container">
-                            <div class="row">
-                                <div class="about-col-1">
-                                    <img src="" alt="">
-                                    <a href="https://drive.google.com/file/d/1BHRKntgoLebEnp7cAlmFryTrDhh-3Hb9/view?usp=drivesdk" class="btn btn1">Resume</a>
-                                </div>
-                
-                                <div class="about-col-2">
-                                   <h1 class="sub-title">About Me</h1>
-                                   <p>A lifetime Learner,Passionate Team Player with hands on knowledge  in demanding
-                                    full Stack Technologies such as HTML5,CSS3,Bootstrap,Javascript.Frontend technologies like React.js.Backend Technologies like MongoDB,Node.js,DSA,Agile Methodology who continueosly 
-                                    wants to upgrade skills and contribute to organization where my skills are recognized.
-                                   </p>
-                
-                                   <div class="tab-titles">
-                                    <p class="tab-links active-link" onclick="openTab('certification')">Certification</p>
-                                    <p class="tab-links active-link" onclick="openTab('education')">Education</p>
-                                    <p class="tab-links active-link" onclick="openTab('interest')">Interest</p>
-                                   </div>
-                
-                                   <div class="tab-contents active-tab" id="certification">
-                
-                                    <ul>
-                                        <li>
-                                            <span>Lets Upgrade-Full Stack Web Developer Program</span>
-                                            <span><a href=" ">Certificate Link</a></span>
-                                        </li>
-                
-                                        <li>
-                                            <span>AWS APAC Solutions Architect Virtual Experience Program </span>
-                                           <span><a href="https://insidesherpa.s3.amazonaws.com/completion-certificates/AWS/kkE9HyeNcw6rwCRGw_AWS_KSueWcNfyBuoEGmLA_1645187724029_completion_certificate.pdf">Certificate Link</a></span>
-                                        </li>
-                
-                                        <li>
-                                            <span>Agile methodology Virtual Experience Program By Cognizant USA</span>
-                                            <span><a href="https://insidesherpa.s3.amazonaws.com/completion-certificates/Cognizant/ZZswQd6xGydd758vz_Cognizant_KSueWcNfyBuoEGmLA_1642333889262_completion_certificate.pdf">Certificate Link</a></span>
-                                        </li>
-                
-                                        <li>
-                                            <span>Accenture Nordiacs Developers Virtual Experience Program</span>
-                                            <span><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/PxenP4rHNE6Bh4nQz_Accenture%20Nordics_KSueWcNfyBuoEGmLA_1675507316068_completion_certificate.pdf">Certificate Link</a></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                
-                                <div class="tab-contents" id="education">
-                                    <ul>
-                                        <li>
-                                            <span>Kavikulguru Institute Of Technology and Science Ramtek,</span>Nagpur,India<br>                                            
-                                            july 2022 <br>
-                                            Bachelors of Engineering. (Computer Technology)<br><br>
-                                        </li>
-                                    
-                
-                                        <li>
-                                           <span>Harihar Junior college of Science Parseoni</span>Nagpur,India <br>
-                                            April 2017 <br>
-                                            Intermediate-Maths,Physics,Chemistry and Biology(Class-XII)<br><br>
-                                        </li>
-                
-                                        <li>
-                                          <span>Harihar High School Parseoni </span>Nagpur,India <br>
-                                          May 2015 <br>
-                                          Class-X <br>
-                                        </li>
-                                  </ul>
-                                </div>
-                
-                             
-                
-                                <div class="tab-contents" id="interests">
-                                    <ul>
-                                        <li>Exploring nature</li>
-                                        <li>Voluntering</li>
-                                        <li>Dancing</li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 backg-text">
+                <h2 class="backg_title">Hi...!<br> It's me <span>Priyanka</span></h2>
+                <p class="backg_desc">Full Stack Web Developer from India </p>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/my profile pic.jpeg" class= "imageAboutPage" alt="">
                 </div>
+
+                <div class="col-lg-8">
+                    <h2>Hello 🖐 </h2>
+                   <p> <h3>MY NAME IS PRIYANKA AND I'M A FULL STACK WEB DEVELOPER</h3></p>
+                     
+                    <p>  A Curious,Self-motivated and Passionate learner with practical hands on knowledge in demanding technologies like MERN Stack,Google Cloud, Agile Methodology.
+                        I continueosly upgrade my skills and convertes my innovative ideas into reality.</p>    
+                    
+                    <p> I see challenges as Opportunity to learn something new.This is my self created quote <span>“NEW DAY,NEW CHALLENGE<br>NEW OPPORTUNITY,NEW LESSON. ”</span> </p>
+                    <p>I love Exploring nature 🍁🌾 and connecting with new people.🤝🙏 </p>
+                   <!-- <img src="images/exploring nature.jpg" class="hobby" alt="">-->
+                    <div class="row mt-3">
+                        <button>
+                        <a href="https://drive.google.com/file/d/1BHRKntgoLebEnp7cAlmFryTrDhh-3Hb9/view?usp=drivesdk " target="_blank" class="btn btn1"> My Resume</a>    
+                        </button>
+                     </div>
+                </div>
+            </div>
+    </section>
                 
-                <!-- Skills  -->
-                <div id="skills">
-                    <div class="container">
+          <!-- Skills  -->
+                <section class="skillset" id="skills">
+                    <section class="container">
                         <h1 class="sub-title">Skills</h1>
                         <div class="skills-list">
                             <div class="skill">
@@ -175,7 +138,7 @@
                                 <div style="background-color: white; width: 30%;">70%</div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 
                     <div style="margin-top: 20px">
                         <h1>Tools</h1>
@@ -189,108 +152,102 @@
                             <div class="tool" style="background-color:rgb(232, 161, 208) ;">Vercel</div>
                         </div>
                     </div>
+                </section>
+                
+                <!-- portfolio section-->
+    <section id="projects">
+        <div class="container mt-3">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/Netflix-Logo.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Netflix Clone</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                
-                <!-- Work/Projects  -->
-                <div id="workAndProjects">
-                    <div class="container">
-                        <h1 class="sub-title">My Work and Projects</h1>
-                        <div class="wp-list">
-                            <div class="wp">
-                                <img src="./images/medical  centre logo.webp" alt="medical web">
-                                <div class="layer">
-                                    <h4>Medical centre website</h4>
-                                    <em>Nov,2022-present</em>
-                                    <p>It's a medical centre's website in Australia,used Full stack technologies for Developement of whole website and appointment booking system. </p>
-                                    <div class="used">
-                                        <span>React.js</span> <span>Node.Js</span>  <span>Express</span>
-                                        <span>Mongodb</span>  <span>MUI</span>  <span>Reactstrap</span>
-                                    </div>
-                                    <div style="display: flex; justify-content: space-around; width: 100;">
-                                        <a style="color: red;" href="https://aquamarine-cucurucho-29d8be.netlify.app/" target="_blank"><i class="uil uil-link">Live</i></a>
-                                        <a style="color: blue;" href=" " target="_blank"><i class="uil uil-github">Github</i></a>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="wp">
-                                <img src="./images/Netflix-Logo.png" alt="Netflix Clone">
-                                <div class="layer">
-                                    <h4>Netflix Clone</h4>
-                                    
-                                    <p>This is a Netflix clone</p>
-                                    <div class="used">
-                                        <span>HTML5</span> <span>CSS3</span>  <span>Javascript</span>
-                                        <span>Reactjs</span>  
-                                    </div>
-                                    <div style="display: flex; justify-content: space-around; width: 100;">
-                                        <a style="color: rgba(233, 32, 14, 0.902);" href="https://spicejetdemour.netlify.app/lavish.com/dropdownspractise/ target="_blank"><i class="uil uil-link">Live</i></a>
-                                        <a style="color: blue;" href="https://github.com/priyanka10Wandhare/Netflix-clone"_blank"><i class="uil uil-github">Github</i></a>
-                                    </div>
-                                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/QUIZ APP.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Quiz App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-
-                            <div class="wp">
-                                <img src="./images/amazon logo.png " alt="Amazon clone">
-                                <div class="layer">
-                                    <h4>Amazon Clone</h4>
-                                    <em>Dec,2022-April,2023</em>
-                                    <p>This is a Amazon clone</p>
-                                    <div class="used">
-                                        <span>Reactjs</span> <span>NodeJs</span>  <span>Express</span>
-                                        <span>Mongodb</span>  <span>MUI</span>  <span>Reactstrap</span>
-                                    </div>
-                                    <div style="display: flex; justify-content: space-around; width: 100;">
-                                        <a style="color: rgba(240, 203, 36, 0.902);" href="https://spicejetdemour.netlify.app/lavish.com/dropdownspractise/ target="_blank"><i class="uil uil-link">Live</i></a>
-                                        <a style="color: blue;" href="https://spicejetdemour.netlify.app/lavish.com/dropdownspractise/ target="_blank"><i class="uil uil-github">Github</i></a>
-                                    </div>
-                                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/TO-DO-APP.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">To-Do App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
                             </div>
-                
-                            <div class="wp">
-                                <img src=" " alt="">
-                                <div class="layer">
-                                    <h4>Quiz App</h4>
-                                    <p>This is a Quiz App </p>
-                                    <div class="used">
-                                        <span>Reactjs</span> 
-                                      
-                                    </div>
-                                    <div style="display: flex; justify-content: space-around; width: 100;">
-                                        <a style="color: rgb(37, 177, 223);" href="https://aquamarine-cucurucho-29d8be.netlify.app/" target="_blank"><i class="uil uil-link">Live</i></a>
-                                        <a style="color: blue;" href="https://github.com/priyanka10Wandhare/Quiz-App-" target="_blank"><i class="uil uil-github">Github</i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="wp">
-                                <img src="./images/TO-DO-APP.png " alt="to-do-app">
-                                <div class="layer">
-                                    <h4>To-DO list app</h4>
-                                    <p>This is a To-DO list app </p>
-                                    <div class="used">
-                                        <span>Reactjs</span> <span>NodeJs</span>  <span>Express</span>
-                                        <span>Mongodb</span>  <span>MUI</span>  <span>Reactstrap</span>
-                                    </div>
-                                    <div style="display: flex; justify-content: space-around; width: 100;">
-                                        <a style="color: red;" href="https://aquamarine-cucurucho-29d8be.netlify.app/" target="_blank"><i class="uil uil-link">Live</i></a>
-                                        <a style="color: blue;" href="https://aquamarine-cucurucho-29d8be.netlify.app/" target="_blank"><i class="uil uil-github">Github</i></a>
-                                    </div>
-                                </div>
-                            </div>
-                      </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/amazon logo.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Amazon Clone</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/medical  centre logo.webp" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Appointment Booking system</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/Instagram_logo.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Instagram Clone</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
                 
+
                 
                 <!-- Experience  -->
-                <div id="experience">
+                <section class="experiences" id="experience">
                     <div class="container">
-                        <h1 class="sub-title">Experience</h1>
+                        <h1 class="sub-title">Experiences</h1>
                         <div class="tab-titles">
                             <p class="exp-tab-links exp-active-link" onclick="openTabExp('gayatri technologies')">Gayatri Technologies</p>
                         </div>
@@ -338,38 +295,94 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </section>
                 
-                <!-- contact me  -->
-                <div id="contact">
+                <section class="certfct" id="certificates">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-contact-1">
-                                <h1 class="sub-title">Contact me</h1>
-                                <p><i class="uil uil enevelope"></i>priyankawandhare1006@gmail.com</p>
-                                <p><i class="uil uil-mobile-android"></i>91-9028774876<p>
+                        <h1 class="sub-title">Certificates</h1>      
+     
+                                            
+                                    <ul>
+                                        <li>
+                                            <span>Lets Upgrade-Full Stack Web Developer Program</span>
+                                            <span><a href=" ">Certificate Link</a></span>
+                                        </li>
                 
-                            <div class="social-icons">
-                                <a href="https://www.linkedin.com/in/priyanka-wandhare-685481223"><i class="uil uil-linkedin"></i></a>
-                                <a href="http://www.github.com"><i class="uil uil-github"></i></a>
-                                <a href="https://twitter.com/PriyankaWa53464"><i class="uil uil-twitter"></i></a>
-                            </div>
-                            <a href="https://drive.google.com/file/d/1BHRKntgoLebEnp7cAlmFryTrDhh-3Hb9/view?usp=drivesdk " target="_blank" class="btn btn1">Resume</a>
-                            </div>
-                            <div class="col-contact-2">
-                                <span id="msg"></span>
-                            </div>
+                                        <li>
+                                            <span>AWS APAC Solutions Architect Virtual Experience Program </span>
+                                           <span><a href="https://insidesherpa.s3.amazonaws.com/completion-certificates/AWS/kkE9HyeNcw6rwCRGw_AWS_KSueWcNfyBuoEGmLA_1645187724029_completion_certificate.pdf">Certificate Link</a></span>
+                                        </li>
+                
+                                        <li>
+                                            <span>Agile methodology Virtual Experience Program By Cognizant USA</span>
+                                            <span><a href="https://insidesherpa.s3.amazonaws.com/completion-certificates/Cognizant/ZZswQd6xGydd758vz_Cognizant_KSueWcNfyBuoEGmLA_1642333889262_completion_certificate.pdf">Certificate Link</a></span>
+                                        </li>
+                
+                                        <li>
+                                            <span>Accenture Nordiacs Developers Virtual Experience Program</span>
+                                            <span><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/PxenP4rHNE6Bh4nQz_Accenture%20Nordics_KSueWcNfyBuoEGmLA_1675507316068_completion_certificate.pdf">Certificate Link</a></span>
+                                        </li>
+                                    </ul>
+    </section> 
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
+                        <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Nagpur,+Maharashtra,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                         </div>
+                        <a class="google-maps-html" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="authorize-maps-data">premium bootstrap themes</a>
+                        <style>#embed-ded-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
                     </div>
                 </div>
-                
-                <div class="copyright">
-                    <p>Copyright &#169 2023-Priyanka Wandhare</p>
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                                 
                 </div>
+            </div>
+        
+    </section>
+
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+               <p> <i class="fa fa-envelope" aria-hidden="true">&nbsp  priyankawandhare1006@gmail.com</i><br></p>
+               <p><i class="fa fa-phone" aria-hidden="true"> &nbsp  +91-9028774876</i></p>  
+        
+
+                <a href="https://www.linkedin.com/in/priyanka-wandhare-685481223" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/priyanka10Wandhare" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.hackerrank.com/priyankawandhar1" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                <a href="https://twitter.com/PriyankaWa53464" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/priyanka_wandhare10/" target="_blank"><i class="fab fa-instagram"></i></a>
                 
-                <a href="#header"><i class="uil uil-arrow-circle-up"></i></a>
-                
-                
-                 <script src="./script.js"></script>
-                </body>
-                </html>
+            </div>
+        </div>
+
+        <br>
+         
+        <div class="copyright">
+            <p>Copyright &#169 2023 - Priyanka Wandhare</p>
+        </div>
+
+      </footer>
+      <script src="script.js"></script>             
+    </body>
+</html>
